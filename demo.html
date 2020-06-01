@@ -5,9 +5,15 @@
   <body>
     Random page
   </body>
-  <script src="makerbadge.js"></script>
+  <script src="blmbadge.js"></script>
   <script>
     // simplest version:
-    MakerBadge.init({id: '963619'});
+    BLMBadge.init(
+      {layout:2, 
+       theme:'light', 
+       promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+       promoLink : 'https://minnesotafreedomfund.org/',
+       message : 'To be silent is to be complicit. Black lives matter.',
+       title : '#BlackLivesMatter'})
   </script>
 </html>
