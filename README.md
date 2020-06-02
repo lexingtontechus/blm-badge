@@ -1,7 +1,7 @@
 # BLMBadge
 ### An open-source badge to put your mark on every project.
 
-<img src="https://ucarecdn.com/17cf0e47-7c5f-4559-972b-d2448aee1768/image.png" style="
+<img src="https://ucarecdn.com/17cf0e47-7c5f-4559-972b-d2448aee1768/image.png" width="600" style="
     margin: 5rem auto;
     display: block;
     border: 4px solid black;
