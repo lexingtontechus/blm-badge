@@ -39,11 +39,11 @@ Use it in 2 steps:
 
 You can customise the values after each colon (e.g. layout:2 - change the 2 to 1)
 
-layout: a number - 1 (badge with text) or 2 (Round button)
-theme: a string - 'light' or 'dark'.
-promoURL: a string (url) to a donation page.
-message: string - any short message.
-title: string - The title of your badge
+* layout: a number - 1 (badge with text) or 2 (Round button)
+* theme: a string - 'light' or 'dark'.
+* promoURL: a string (url) to a donation page.
+* message: string - any short message.
+* title: string - The title of your badge
 
 ---
 
