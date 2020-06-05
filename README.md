@@ -30,7 +30,8 @@ Use it in 2 steps:
        promoText : 'Send a donation '+String.fromCodePoint(0x2192),
        promoLink : 'https://minnesotafreedomfund.org/',
        message : 'To be silent is to be complicit. Black lives matter.',
-       title : '#BlackLivesMatter'
+       title : '#BlackLivesMatter',
+       imageAlt: "Black Lives Matter Badge"
 })
 </script>
 ```
