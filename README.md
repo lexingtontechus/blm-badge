@@ -44,6 +44,7 @@ You can customise the values after each colon (e.g. layout:2 - change the 2 to 1
 * promoURL: a string (url) to a donation page.
 * message: string - any short message.
 * title: string - The title of your badge
+* imageAlt: string - Alt text for your image - the default is "Black Lives Matter Badge"
 
 ---
 

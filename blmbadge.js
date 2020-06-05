@@ -22,6 +22,9 @@ MakerBadge.prototype = {
     if (settings.promoLink) {
       this.promoLink = settings.promoLink;
     }
+    if (settings.imageAlt) {
+      this.imageAlt = settings.imageAlt;
+    }
 
     if (settings.theme) {
       this.theme = settings.theme;
@@ -42,7 +45,7 @@ MakerBadge.prototype = {
     //only using pic in theme 2
     if (this.layout) {
       if (settings.pic) {
-        this.pic = '<img width="30" style="border-radius:100%" src="' + settings.pic + '"/>&nbsp;&nbsp;'
+        this.pic = '<img alt="'+(settings.imageAlt ? settings.imageAlt:'Black Lives Matter Badge')+'" width="30" style="border-radius:100%" src="' + settings.pic + '"/>&nbsp;&nbsp;'
       }
     }
 
@@ -101,8 +104,9 @@ MakerBadge.prototype = {
       }
     }
     const userPic = that.pic ? that.pic :img
+    const imageAlt = that.imageAlt ? that.imageAlt:'Black Lives Matter Badge'
     const userPicSize = that.layout === 2 ? 50 : 30
-    const picEl = '<img style="'+border+'" width="' + userPicSize + '" class="maker-badge__btn-img" src="' + userPic + '"/>&nbsp;&nbsp;'
+    const picEl = '<img alt="'+imageAlt+'" style="'+border+'" width="' + userPicSize + '" class="maker-badge__btn-img" src="' + userPic + '"/>&nbsp;&nbsp;'
     const name = that.title ? that.title : '#BlackLivesMatter'
     // username.innerHTML = '@' + data.user.username;
 
@@ -280,6 +284,7 @@ function MakerBadge(settings) {
   this.coffee = false
   this.customHTML = ''
   this.mounted = false
+  this.imageAlt = ''
 
   this.theme=''
   this.title = '#BlackLivesMatter'
