@@ -45,7 +45,7 @@ MakerBadge.prototype = {
     //only using pic in theme 2
     if (this.layout) {
       if (settings.pic) {
-        this.pic = '<img alt="'+(settings.imageAlt ? settings.imageAlt:'Black Lives Matter Badge')+'" width="30" style="border-radius:100%" src="' + settings.pic + '"/>&nbsp;&nbsp;'
+        this.pic = '<img alt="'+(settings.imageAlt ? settings.imageAlt:'My SAVI Story')+'" width="30" style="border-radius:100%" src="' + settings.pic + '"/>&nbsp;&nbsp;'
       }
     }
 
@@ -93,24 +93,24 @@ MakerBadge.prototype = {
     var that = this
     //@TODO: separate themes out into their own sections
     //var img = 'https://tinify-bucket.s3-us-west-1.amazonaws.com/blm-blue-round.png'
-    var mg = 'https://www.lexingtontech.us/wp-content/uploads/images/savi_preferred_partner.png'
+    var mg = 'https://github.com/lexingtontechus/blm-badge/blob/master/docs/img/SAVI_logo.png'
     var border = '';
     if(that.theme=='dark'){
       //img = 'https://tinify-bucket.s3-us-west-1.amazonaws.com/blm-blue-round.png'
-      img = 'https://www.lexingtontech.us/wp-content/uploads/images/savi_preferred_partner.png'
+      img = 'https://github.com/lexingtontechus/blm-badge/blob/master/docs/img/SAVI_logo.png'
     }
     else if(that.theme=='light' ){
       //img = 'https://tinify-bucket.s3-us-west-1.amazonaws.com/blm-white-round.png'
-      img = 'https://www.lexingtontech.us/wp-content/uploads/images/savi_preferred_partner.png'
+      img = 'https://github.com/lexingtontechus/blm-badge/blob/master/docs/img/SAVI_logo.png'
       if(that.layout==2){
         border = 'border:1px solid #cbd5e0;';
       }
     }
     const userPic = that.pic ? that.pic :img
-    const imageAlt = that.imageAlt ? that.imageAlt:'Black Lives Matter Badge'
+    const imageAlt = that.imageAlt ? that.imageAlt:'My SAVI Story'
     const userPicSize = that.layout === 2 ? 50 : 30
     const picEl = '<img alt="'+imageAlt+'" style="'+border+'" width="' + userPicSize + '" class="maker-badge__btn-img" src="' + userPic + '"/>&nbsp;&nbsp;'
-    const name = that.title ? that.title : '#BlackLivesMatter'
+    const name = that.title ? that.title : '#mySAVIstory'
     // username.innerHTML = '@' + data.user.username;
 
     if (that.layout === 1) {
