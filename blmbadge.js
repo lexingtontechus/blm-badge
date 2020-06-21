@@ -3,7 +3,7 @@ MakerBadge.prototype = {
   constructor: MakerBadge,
 
   init: function (settings, callback) {
-
+a
     //set properties
     if (settings.id) {
       this.userId = settings.id
@@ -68,7 +68,7 @@ MakerBadge.prototype = {
     makerbadge.style = "display:block;margin: 0.5rem 0;font-size:10px;color:#718096;text-decoration:none;font-weight:400;"
     makerbadge.innerHTML = "Add this to your website"
     makerbadge.target="_blank"
-    makerbadge.href = "http://blmbadge.unicornplatform.com"
+    makerbadge.href = "https://savivets.org/our-partners"
     //set the style based on theme
     const customHTML = document.createElement('div');
     customHTML.innerHTML = this.customHTML;
