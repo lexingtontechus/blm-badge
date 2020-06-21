@@ -3,7 +3,7 @@ MakerBadge.prototype = {
   constructor: MakerBadge,
 
   init: function (settings, callback) {
-a
+
     //set properties
     if (settings.id) {
       this.userId = settings.id
